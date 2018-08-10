@@ -41,7 +41,7 @@ male_series.index = year_list
 
 male_series = male_series.dropna()
 male_series.plot(kind='barh')
-plt.title('Youth not in employment (Bar Chart)')
+plt.title('Male Youth not in employment (Bar Chart)')
 plt.xlabel('Percentage')
 plt.ylabel('Years')
 plt.grid()
