@@ -29,11 +29,11 @@ opacity = 0.8
 
 
 rects1 = plt.bar(index, list(employment_data.iloc[0]), bar_width,
-                 color='r',
+                 color='b',
                  label='Male')
 
 rect2 = plt.bar(index + bar_width, list(employment_data.iloc[1]), bar_width,
-                color='b',
+                color='r',
                 label='Female')
 
 plt.xlabel('Year')
