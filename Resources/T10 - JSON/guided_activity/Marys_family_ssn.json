@@ -4,30 +4,30 @@
     "sex": "female",
     "kids": [
       {
-        "name": "jim",
+        "name": "Jim",
         "age": "10",
         "sex": "male",
         "dob_year": "2007",
         "ssn": "123-23-1234"
       },
       {
-        "name": "jill",
+        "name": "Jill",
         "age": "6",
         "sex": "female",
         "dob_year": "2011",
         "ssn": "123-23-1235"
       },
 	  {
-        "name": "bruce",
+        "name": "Jason",
         "age": "4",
         "sex": "male",
         "dob_year": "2013",
         "ssn": "123-23-1236"
       },
 	  {
-        "name": "cthulhu",
+        "name": "Todd",
         "age": "1",
-        "sex": "unknown",
-        "dob_year": "1928",
+        "sex": "male",
+        "dob_year": "2016",
         "ssn": "123-23-1237"
       }]}}

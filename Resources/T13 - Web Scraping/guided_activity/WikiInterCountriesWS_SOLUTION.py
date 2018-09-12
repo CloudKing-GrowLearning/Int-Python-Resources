@@ -5,18 +5,12 @@ import pandas as pd
 url = 'https://en.wikipedia.org/wiki/List_of_countries_by_number_of_Internet_users'
 
 response = get(url)
-#print(response.text[:500])
 
 html_soup = BeautifulSoup(response.text, 'html.parser')
-#print(type(html_soup))
 
 country_table = html_soup.find('table', class_='wikitable sortable')
-#print(type(country_table))
-# print(len(country_table))
 
 table_rows = country_table.find_all('tr')
-#print(type(table_rows))
-#print(len(table_rows))
 
 heading_list = []
 country = []

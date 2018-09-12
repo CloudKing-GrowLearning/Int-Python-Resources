@@ -6,7 +6,7 @@ import json
     #    print('Name: ' + c['name'])
      #   print('')
 
-with open('sample.json') as js:
+with open('Marys_family_ssn.json') as js:
     j = json.load(js)
     print(type(j))
 
