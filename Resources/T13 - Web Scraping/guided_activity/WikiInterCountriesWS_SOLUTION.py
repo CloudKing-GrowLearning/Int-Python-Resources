@@ -49,4 +49,5 @@ df = pd.DataFrame({heading_list[0]: country,
                    heading_list[3]: percentage,
                    heading_list[4]: percentage_rank
                    })
-print(percentage_rank)
+
+print(df.head())
