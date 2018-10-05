@@ -1,0 +1,33 @@
+{"family": {
+    "name": "Mary",
+    "age": "32",
+    "sex": "female",
+    "kids": [
+      {
+        "name": "Jim",
+        "age": "10",
+        "sex": "male",
+        "dob_year": "2007",
+        "ssn": "123-23-1234"
+      },
+      {
+        "name": "Jill",
+        "age": "6",
+        "sex": "female",
+        "dob_year": "2011",
+        "ssn": "123-23-1235"
+      },
+	  {
+        "name": "Jason",
+        "age": "4",
+        "sex": "male",
+        "dob_year": "2013",
+        "ssn": "123-23-1236"
+      },
+	  {
+        "name": "Todd",
+        "age": "1",
+        "sex": "male",
+        "dob_year": "2016",
+        "ssn": "123-23-1237"
+      }]}}
