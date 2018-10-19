@@ -3,25 +3,22 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import matplotlib.pyplot as plt
 
+import os
+
+file_dir = os.getcwd()
+
+#First page Scrape
 url = 'https://www.numbeo.com/cost-of-living/rankings_by_country.jsp?title=2015'
 response = get(url)
 
 html_soup = BeautifulSoup(response.text, 'html.parser')
 
-
 country_table = html_soup.find('table', id='t2')
 table_rows = country_table.find_all('tr')
-#print(len(table_rows))
 
-heading_list = []
 dict_coli = {'country': [], 'coli': []}
 for row in table_rows:
-    heading = row.find_all('th')
     cells = row.find_all('td')
-    print(len(heading))
-    if len(heading) == 8:
-        for x in range(0, len(heading)):
-            heading_list.append(heading[x].find(text=True))
     if len(cells) == 8:
         country = cells[1].find(text=True)
         dict_coli['country'].append(country)
@@ -29,30 +26,26 @@ for row in table_rows:
         cost_of_liv_index = cells[2].find(text=True)
         dict_coli['coli'].append(cost_of_liv_index)
 
-#print(dict_coli.items())
 df = pd.DataFrame.from_dict(dict_coli)
 df = df[['country', 'coli']] #Change the order or could use OrderedDict
-#print(df.head())
-print(len(df))
 
-url2 = 'https://www.infoplease.com/world/health-and-social-statistics/life-expectancy-countries-0'
-response = get(url2)
+#Second Page scrape
+url2 = 'https://en.wikipedia.org/wiki/List_of_countries_by_life_expectancy'
 
-html_soup = BeautifulSoup(response.text, 'html.parser')
+response2 = get(url2)
 
+html_soup2 = BeautifulSoup(response2.text, 'html.parser')
 
-country_table = html_soup.find('table')
-table_rows = country_table.find_all('tr')
-heading_list2 = []
+country_table_list = html_soup2.find_all('table', class_='wikitable sortable')
+
+table_rows2 = country_table_list[3].find_all('tr')
+
 dict_le = {'country': [], 'le': []}
-for row in table_rows:
-    heading = row.find_all('th')
+
+for row in table_rows2:
     cells = row.find_all('td')
-    if len(heading) == 3:
-        for x in range(0, len(heading)):
-            heading_list2.append(heading[x].find(text=True))
-    if len(cells) == 3:
-        country = cells[1].find(text=True)
+    if len(cells) == 5:
+        country = cells[1].find('a')['title']
         dict_le['country'].append(country)
 
         life_exp = cells[2].find(text=True)
@@ -60,15 +53,12 @@ for row in table_rows:
 
 df2 = pd.DataFrame.from_dict(dict_le)
 df2 = df2[['country', 'le']] #Change the order or could use OrderedDict
-#print(df2.head())
 
+#Plot Creation
 fin_df = pd.merge(df, df2, on='country')
 fin_df = fin_df.rename(columns = {'coli':'cost of living index'})
 fin_df = fin_df.rename(columns = {'le':'life expectancy'})
-print(fin_df.head())
-print(len(fin_df))
 
-#url3 = 'http://www.nationmaster.com/country-info/stats/Health'#Lots of cool stats
 
 num_rate = 5
 coli_list = fin_df['cost of living index'][:num_rate]
@@ -96,10 +86,11 @@ rect2 = plt.bar(index + bar_width, le_list, bar_width,
                 label='life expectancy')
 
 plt.xlabel('Country')
-plt.ylabel('Average Hourly Rate')
-#plt.title('Comparison of Wages between Genders Across City Departments')
+plt.ylabel('cost of living/life expectancy')
+plt.title('Comparison of Life Expectancy and cost of living across countries')
 plt.xticks(index + (bar_width / 2), country_list, rotation='vertical')
 plt.legend()
 
 plt.tight_layout()
-plt.show()
+#plt.show()
+plt.savefig(file_dir + '/cost_of_living_against_life_expect.png')
