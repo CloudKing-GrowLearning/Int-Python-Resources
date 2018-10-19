@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<catalog>
+   <movie id="mov01">
+      <title>Venom</title>
+	  <release>2018</release>
+	  <run_time>112 min</run_time>
+	  <genre>Action, Sci-Fi</genre>
+	  <age_rating>15</age_rating>
+	  <description>Journalist Brock gains superpowers after being bound to an alien symbiote whose species plans to invade Earth.</description>
+   </movie>
+   <movie id="mov02">
+      <title>A Star Is Born</title>
+	  <release>2018</release>
+	  <run_time>136 min</run_time>
+	  <genre>Drama, Music, Romance</genre>
+	  <age_rating>15</age_rating>
+	  <description>Bradley Cooper plays seasoned musician Jackson Maine, who discovers--and falls in love with--struggling artist Ally (Gaga).</description>
+   </movie>
+   <movie id="mov03">
+      <title>Bad Times at the El Royale</title>
+	  <release>2018</release>
+	  <run_time>141 min</run_time>
+	  <genre>Mystery, Thriller</genre>
+	  <age_rating>15</age_rating>
+	  <description>The El Royale is run-down hotel that sits on the border between California and Nevada. It soon becomes a seedy battleground when seven strangers -- a cleric, a soul singer, a traveling salesman, two sisters, the manager and the mysterious Billy Lee -- converge on a fateful night for one last shot at redemption before everything goes wrong.</description>
+   </movie>
+   <movie id="mov04">
+      <title>First Man</title>
+	  <release>2018</release>
+	  <run_time>141 min</run_time>
+	  <genre>Biography, Drama, History</genre>
+	  <age_rating>12A</age_rating>
+	  <description>The story of NASA’s mission to land a man on the moon, focusing on Neil Armstrong and the years 1961-1969.</description>
+   </movie>
+   <movie id="mov05">
+      <title>Halloween</title>
+	  <release>2018</release>
+	  <run_time>106 min</run_time>
+	  <genre>Horror, Thriller</genre>
+	  <age_rating>18</age_rating>
+	  <description>It's been 40 years since Laurie Strode survived a vicious attack from crazed killer Michael Myers on Halloween night. Locked up in an institution, Myers manages to escape when his bus transfer goes horribly wrong. Laurie now faces a terrifying showdown when the masked madman returns to Haddonfield, Ill. -- but this time, she's ready for him.</description>
+   </movie>
+   <movie id="mov06">
+      <title>A Simple Favour</title>
+	  <release>2018</release>
+	  <run_time>117 min</run_time>
+	  <genre>Comedy, Crime, Drama</genre>
+	  <age_rating>15</age_rating>
+	  <description>A SIMPLE FAVOR, directed by Paul Feig, centers around Stephanie (Anna Kendrick), a mommy vlogger who seeks to uncover the truth behind her best friend Emily's (Blake Lively) sudden disappearance from their small town.</description>
+   </movie>
+   <movie id="mov07">
+      <title>22 July</title>
+	  <release>2018</release>
+	  <run_time>143 min</run_time>
+	  <genre>Crime, Drama, History</genre>
+	  <age_rating>15</age_rating>
+	  <description>A dramatisation of Norway's deadliest terrorist attack, in which a right-wing extremist murders 77 teens at a youth camp in 2011.</description>
+   </movie>
+   <movie id="mov08">
+      <title>Ant-Man and the Wasp</title>
+	  <release>2018</release>
+	  <run_time>118 min</run_time>
+	  <genre>Action, Adventure, Sci-Fi</genre>
+	  <age_rating>12A</age_rating>
+	  <description>Scott Lang is grappling with the consequences of his choices as both a superhero and a father. Approached by Hope van Dyne and Dr. Hank Pym, Lang must once again don the Ant-Man suit and fight alongside the Wasp. The urgent mission soon leads to secret revelations from the past as the dynamic duo finds itself in an epic battle against a powerful new enemy.</description>
+   </movie>
+   <movie id="mov09">
+      <title>The Predator</title>
+	  <release>2018</release>
+	  <run_time>107 min</run_time>
+	  <genre>Action, Adventure, Horror</genre>
+	  <age_rating>15</age_rating>
+	  <description>From the outer reaches of space to the small-town streets of suburbia, the hunt comes home. The universe's most lethal hunters are stronger, smarter and deadlier than ever before, having genetically upgraded themselves with DNA from other species. When a boy accidentally triggers their return to Earth, only a ragtag crew of ex-soldiers and an evolutionary biologist can prevent the end of the human race.</description>
+   </movie>
+   <movie id="mov10">
+      <title>Solo: A Star Wars Story</title>
+	  <release>2018</release>
+	  <run_time>135 min</run_time>
+	  <genre>Action, Adventure, Fantasy</genre>
+	  <age_rating>12A</age_rating>
+	  <description>Young Han Solo finds adventure when he joins forces with a gang of galactic smugglers and a 190-year-old Wookie named Chewbacca. Indebted to the gangster Dryden Vos, the crew devises a daring plan to travel to the mining planet Kessel to steal a batch of valuable coaxium. In need of a fast ship, Solo meets Lando Calrissian, the suave owner of the perfect vessel for the dangerous mission -- the Millennium Falcon.</description>
+   </movie>
+   <movie id="mov11">
+      <title>Avengers: Infinity War</title>
+	  <release>2018</release>
+	  <run_time>149 min</run_time>
+	  <genre>Action, Adventure, Fantasy</genre>
+	  <age_rating>12A</age_rating>
+	  <description>Iron Man, Thor, the Hulk and the rest of the Avengers unite to battle their most powerful enemy yet - the evil Thanos. On a mission to collect all six Infinity Stones, Thanos plans to use the artifacts to inflict his twisted will on reality. The fate of the planet and existence itself has never been more uncertain as everything the Avengers have fought for has led up to this moment.</description>
+   </movie>
+   <movie id="mov12">
+      <title>The Nun</title>
+	  <release>2018</release>
+	  <run_time>96 min</run_time>
+	  <genre>Horror, Mystery, Thriller</genre>
+	  <age_rating>15</age_rating>
+	  <description>When a young nun at a cloistered abbey in Romania takes her own life, a priest with a haunted past and a novitiate on the threshold of her final vows are sent by the Vatican to investigate. Together, they uncover the order's unholy secret. Risking not only their lives but their faith and their very souls, they confront a malevolent force in the form of a demonic nun.</description>
+   </movie>
+</catalog>
