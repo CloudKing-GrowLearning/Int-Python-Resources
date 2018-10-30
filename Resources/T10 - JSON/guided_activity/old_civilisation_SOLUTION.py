@@ -1,7 +1,7 @@
 import json
 from urllib.request import urlopen
 
-with urlopen("https://classroom.sagepub.com/pluginfile.php/3016/mod_resource/content/0/old_civilizations.json") as url:
+with urlopen("https://classroom.sagepub.com/pluginfile.php/3160/mod_resource/content/2/old_civilizations.json") as url:
     data = json.load(url)
 
     for c in data['civilizations']:
