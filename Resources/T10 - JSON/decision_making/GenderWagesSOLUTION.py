@@ -1,25 +1,25 @@
 import json, urllib.request
 import pandas as pd
 import matplotlib.pyplot as plt
-import numpy as np
 
 with urllib.request.urlopen("https://data.seattle.gov/resource/5m8y-83zb.json") as url:
   json_data = json.loads(url.read().decode())
   data = pd.DataFrame.from_dict(json_data)
 
-  num_group = 4
+  data = data.dropna(subset=['male_avg_hrly_rate', 'female_avg_hrly_rate'])
 
-  avg_male = data['male_avg_hrly_rate'][:num_group]
-  avg_female = data['female_avg_hrly_rate'][:num_group]
-  jobtitle_list = data['jobtitle']
+  num_group = 8
+
+  avg_male = list(data['male_avg_hrly_rate'][:num_group])
+  avg_female = list(data['female_avg_hrly_rate'][:num_group])
+  jobtitle_list = list(data['jobtitle'])
 
   for i in range(0, len(avg_male)):
       avg_male[i] = float(avg_male[i])
       avg_female[i] = float(avg_female[i])
 
-  #Create Plot
+#Create Plot
   fig, ax = plt.subplots()
-  #index = np.arange(num_group)
   index = pd.Series(range(num_group))
   bar_width = 0.35
   opacity = 0.8
